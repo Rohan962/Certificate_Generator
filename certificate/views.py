@@ -261,9 +261,11 @@ def track(request, id, slug):
 				mail.content_subtype = "html"
 				mail.attach_file(pdf_path)
 				mail.send()
+				print("Mail sent successfully")
 				Participant(event=event, email=df.loc[i,event.email_column], status=True).save()
 				
 			except:
+				print("Mail not sent")
 				Participant(event=event, email=df.loc[i,event.email_column], status=False).save()
 				# os.remove(s_name+'.pdf')
 				# os.remove(s_name+".pptx")
