@@ -1,0 +1,63 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore all `.env` files
+.env
+
+# Ignore all `.ppt` files
+*.pptx
+*.ppt
+
+# Ignore all '.csv' files
+*.csv
+
+# Ignore all files in a temp directory
+temp/
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django-specific files
+db.sqlite3
+*.log
+
+# Static files
+/staticfiles/
+*.css.map
+*.js.map
+
+# Virtual environments
+venv/
+env/
+*.egg-info/
+.eggs/
+
+# Pip and Python caches
+*.pip
+*.pyo
+*.pyd
+*.whl
+*.egg
+*.egg-info/
+.Python
+
+# Migrations
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Media
+
+/media/certificates/generated
+
+
+#Micscellaneous files
+temp.py
+temp.js
+notes.txt
+subhojitmahati.pptx
+
